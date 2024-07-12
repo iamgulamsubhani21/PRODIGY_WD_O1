@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://wallup.net/wp-content/uploads/2019/09/841798-lamborghini-aventador-super-veloce-cars-supercars-red.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .front {
+            background-image: url('https://performancedrive.com.au/wp-content/uploads/2017/04/2018-Hyundai-Kona-teaser.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .btn-1 {
+            border-color: #008cff;
+            padding: 7px;
+            margin-left: 1rem;
+            border-radius: 5px;
+            background-color: #008cff;
+            color: #ffffff;
+        }
+        .second-section {
+            background-image: url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px;
+            color: white;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+        }
+        .footer-section h4 {
+            border-bottom: 1px solid #777;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .footer-section p {
+            margin: 0 0 10px;
+        }
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        .navbar-nav .nav-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .navbar-nav .nav-link {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .navbar-nav .nav-item:hover .nav-link {
+            transform: translateY(-10px);
+        }
+        .navbar-brand {
+            display: inline-block; 
+            transition: transform 2s ease-in-out; 
+        }
+        .navbar-brand:hover {
+            transform: rotate(360deg);
+        }
+        .rot {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff0066, #ffcc00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: background 0.5s ease-in-out, transform 2s ease-in-out;
+        }
+        .rot:hover {
+            background: linear-gradient(45deg, #07fd07, #0894f2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: rotate(360deg);
+        }
+        .did1:hover, .did2:hover, .did3:hover {
+            transform: translateY(-10px);
+            text-decoration: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="front">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">The Venture</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Dealers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #010101;" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color:black;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">General Info</a></li>
+                                <li><a class="dropdown-item" href="#">Most Demanding</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Reviews</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true" href="#">Orders</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><br>
+        <h3 class="rot">The Venture</h3>
+        <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus excepturi 
+            enim <br> facere et provident, temporibus repellendus reiciendis sequi rem architecto <br> at voluptates
+            consequatur quasi possimus blanditiis fugit corporis atque modi beatae <br> dolorem voluptatib us, 
+            omnis animi sed. Repudiandae aliquid soluta ducimus. <br> Quae minima distinctio velit rerum nostrum 
+            consequatur voluptatum, earum incidunt soluta? <br> Sed sunt accusantium veritatis aliquam eveniet 
+            error? Dolorum sint provident iusto vitae</p>
+        <br><br><br>
+        <p class="d-inline-flex gap-1">
+            <a class="btn-1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                LogIn
+            </a>
+            <button class="btn-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Sign-Up
+            </button>
+        </p>
+    </div>
+    <div class="second-section">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/bmw-m3_2.jpg" class="d-block w-100" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Venture 1</h5>
+                        <p>Beyond Your Limits.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://st.motortrend.com/uploads/sites/10/2015/09/2016-Mercedes-AMG-GT-S-front-three-quarter-in-motion.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Venture 2</h5>
+                        <p>Know Your Dragon</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.luxurytopics.com/storage/posts/gallery/2023/Mar/55539/ghost-amber-roads-novo-bespoke-izdanje-rolls-royce-brenda-3.jpg" class="d-block w-100" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Venture 3</h5>
+                        <p>Make Your Density.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 class="did1">Contact Us</h4>
+                <p>1234 Street Name<br>City, State, 12345</p>
+                <p>Email: info@example.com<br>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="did2">Office Locations</h4>
+                <p>Office 1<br>5678 Another St<br>City, State, 67890</p>
+                <p>Office 2<br>91011 Another Ave<br>City, State, 11213</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="did3">Follow Us</h4>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Instagram</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Activate the carousel with auto-sliding
+        var myCarousel = document.getElementById('carouselExampleCaptions');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 4000, // Adjust interval (in milliseconds) as needed
+            wrap: true // Enable looping of slides
+        });
+    </script>
+</body>
+</html>
